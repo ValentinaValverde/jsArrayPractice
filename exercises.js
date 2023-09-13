@@ -8,7 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // ---------------------
 
     // Put your answer below -------------------------
-
+    function myFunction(string, num) {
+        let motherFunction = string.repeat(num);
+        console.log(motherFunction);
+    }
+    myFunction("sunshine ", 3);
     // -----------------------------------------------
 
     // ---------------------
@@ -17,7 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // ---------------------
 
     // Put your answer below -------------------------
-
+    const arr = [1, 2, 3];
+    const newArr = arr.reverse();
+    console.log(newArr);
     // -----------------------------------------------
 
     // ---------------------
@@ -25,6 +31,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // ---------------------
 
     // Put your answer below -------------------------
+    const arr2 = [0, 1, 4, true, false, null, "mother", undefined, "hello", "", NaN];
+    const newArr2 = arr2.filter(function (value) {
+        return value;
+    });
+    console.log(newArr2);
 
     // -----------------------------------------------
 
@@ -35,7 +46,13 @@ document.addEventListener('DOMContentLoaded', function () {
     // ---------------------
 
     // Put your answer below -------------------------
-
+    const arr3 = [['name', 'Charlie'], ['color', 'brown'], ['age', 10]];
+    function newArr3(array) {
+        console.log(array[0][0] + ": " + array[0][1]);
+        console.log(array[1][0] + ": " + array[1][1]);
+        console.log(array[2][0] + ": " + array[2][1]);
+    }
+    newArr3(arr3);
     // -----------------------------------------------
 
     // ---------------------
@@ -44,6 +61,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // ---------------------
 
     // Put your answer below -------------------------
+    const arr4 = [1, 2, 3, 4, 5, 4, 3];
+    const newArr4 = arr4.filter((c, index) => {
+        return arr4.indexOf(c) === index;
+    });
+    console.log(newArr4);
 
     // -----------------------------------------------
 
@@ -56,6 +78,14 @@ document.addEventListener('DOMContentLoaded', function () {
     // ---------------------
 
     // Put your answer below -------------------------
+    const newArr5 = [1, 2, 3, 4];
+    const newArr6 = [1, 2, 3, 4, 5];
+    function identicalVals(a5, a6) {
+        const arrayString = String(a5);
+        const arrString2 = String(a6);
+        console.log(arrayString.includes(arrString2));
+    }
+    identicalVals(newArr5, newArr6);
 
     // -----------------------------------------------
 
@@ -68,6 +98,16 @@ document.addEventListener('DOMContentLoaded', function () {
     //                                              //
     //////////////////////////////////////////////////
     //////////////////////////////////////////////////
+
+    //              _____       ____   
+    //             /     \    /    /   
+    //            /       \  /    / ____   
+    //           /    /\   \/    / / __ \   
+    //          /    /  \       / / /_/ /    . _ .
+    //         /____/    \_____/  \____/     
+    //                                      
+
+
 
     // ---------------------
     // Define a function that takes an array and returns a new array with all sub-array elements concatenated into it
