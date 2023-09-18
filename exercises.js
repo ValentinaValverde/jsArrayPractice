@@ -9,10 +9,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Put your answer below -------------------------
     function myFunction(string, num) {
-        let motherFunction = string.repeat(num);
-        console.log(motherFunction);
-    }
-    myFunction("sunshine ", 3);
+        // let motherFunction = [string.repeat(num)];
+        // console.log(motherFunction);
+        
+        let array = [];
+        while(num > 0){
+            array.push(string);
+            num --;
+        }
+        return(array);
+    };
+    console.log(myFunction("sunshine ", 3));
+
+
     // -----------------------------------------------
 
     // ---------------------
@@ -22,8 +31,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Put your answer below -------------------------
     const arr = [1, 2, 3];
-    const newArr = arr.reverse();
-    console.log(newArr);
+    const newArr = [...arr].reverse();
+    console.log("ORIGINAL ARRAY:", arr);
+    console.log("NEW ARRAY: ", newArr);
     // -----------------------------------------------
 
     // ---------------------
@@ -53,6 +63,12 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log(array[2][0] + ": " + array[2][1]);
     }
     newArr3(arr3);
+
+    // function newArrTest(array(a, b)){
+    //     console.log(a = ":" + b);
+    // }
+    // newArrTest(arr3);
+
     // -----------------------------------------------
 
     // ---------------------
